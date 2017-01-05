@@ -16,9 +16,9 @@
                 Connection c=null;
                 PreparedStatement pstmt;
                 ResultSet rs;
-                String url="jdbc:mysql://localhost:3306/mydb" ;
+                String url="jdbc:mysql://172.30.40.75:3306/sampledb" ;
                 Class.forName("com.mysql.jdbc.Driver");
-                c =DriverManager.getConnection(url,"root","sonal");
+                c =DriverManager.getConnection(url,"sonal","sonal");
           
               String r1=request.getParameter("n1");
               pstmt=c.prepareStatement("insert into  attend values(?)");
