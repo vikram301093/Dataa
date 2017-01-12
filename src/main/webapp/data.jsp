@@ -16,7 +16,7 @@
                 Connection c=null;
                 PreparedStatement pstmt;
                 ResultSet rs;
-                String url="jdbc:mysql://172.30.40.75:3306/sampledb" ;
+                String url="jdbc:mysql://172.30.54.105:3306/sampledb" ;
                 Class.forName("com.mysql.jdbc.Driver");
                 c =DriverManager.getConnection(url,"sonal","sonal");
           
