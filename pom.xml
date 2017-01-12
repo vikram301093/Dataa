@@ -1,31 +1,30 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>sonal1</groupId>
-  <artifactId>sonal1</artifactId>
+  <groupId>Sonal</groupId>
+  <artifactId>Sonal</artifactId>
   <version>0.0.1-SNAPSHOT</version>
- 
-  <name>sonal1</name>
-  <description>sonal1</description>
-  
-  <properties>
+  <packaging>war</packaging>
+  <name>Sonal</name>
+<properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
     	<maven.compiler.target>1.7</maven.compiler.target>
     </properties>
-  
-  <dependencies>
-  <dependency>
+    
+    <dependencies>
+      <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
     <version>5.1.39</version>
 </dependency>
- <dependency>
+       <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-</dependencies>
+    </dependencies>
+
 <profiles>
     <profile>
      <!-- When built in OpenShift the 'openshift' profile will be used when invoking mvn. -->
@@ -34,7 +33,7 @@
      <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
      <id>openshift</id>
      <build>
-        <finalName>Sonal1</finalName>
+        <finalName>Sonal</finalName>
         <plugins>
           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
