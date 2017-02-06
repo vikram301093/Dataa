@@ -27,7 +27,7 @@
  // String DB_NAME = System.getenv("OPENSHIFT_MYSQL_DB_NAME");
             
              // String url = "jdbc:mysql://" + HOST + ":" + PORT +
-                    "/" + DB_NAME;
+             //       "/" + DB_NAME;
             //  Connection con = DriverManager.getConnection(url, USERNAME, PASSWORD);     
             String url="jdbc:mysql://172.30.26.120:3306/sampledb" ;
              Connection c =DriverManager.getConnection(url,"admin","root");
