@@ -30,7 +30,7 @@
                     "/" + DB_NAME;
             //  Connection con = DriverManager.getConnection(url, USERNAME, PASSWORD);     
             String url="jdbc:mysql://172.30.54.105:3306/sampledb" ;
-             Connection c =DriverManager.getConnection(url,"sonal","sonal");
+             Connection c =DriverManager.getConnection(url,"admin","root");
             
               String r1=request.getParameter("n1");
               PreparedStatement pstmt=con.prepareStatement("insert into  attend values(?)");
