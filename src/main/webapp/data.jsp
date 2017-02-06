@@ -33,7 +33,7 @@
              Connection c =DriverManager.getConnection(url,"admin","root");
             
               String r1=request.getParameter("n1");
-              PreparedStatement pstmt=con.prepareStatement("insert into  attend values(?)");
+              PreparedStatement pstmt=c.prepareStatement("insert into  attend values(?)");
               pstmt.setString(1,r1);
               pstmt.executeUpdate();
 out.print(r1);
