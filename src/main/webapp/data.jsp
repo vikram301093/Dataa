@@ -29,7 +29,7 @@
              // String url = "jdbc:mysql://" + HOST + ":" + PORT +
              //       "/" + DB_NAME;
             //  Connection con = DriverManager.getConnection(url, USERNAME, PASSWORD);     
-            String url="jdbc:mysql://172.30.162.99:3306/sampledb" ;
+            String url="jdbc:mysql://172.30.30.234:3306/sampledb" ;
              Connection c =DriverManager.getConnection(url,"admin","root");
             
               String r1=request.getParameter("n1");
